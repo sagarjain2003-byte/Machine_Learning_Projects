@@ -63,80 +63,6 @@ The project aggregates these measurements into hourly average power values.
 
 Models are compared using the same chronological test set.
 
-## Project Structure
-
-```text
-non-linear-energy-demand-predictor/
-├── data/
-│   └── household_power_consumption.txt
-├── energy_demand.ipynb
-├── energy_demand_model.pkl
-├── model_features.pkl
-├── model_comparison.csv
-├── processed_energy_data.csv
-├── requirements.txt
-└── README.md
-```
-
-The dataset and generated model files do not have to be committed to GitHub. See the .gitignore recommendations below.
-
-## Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/non-linear-energy-demand-predictor.git
-cd non-linear-energy-demand-predictor
-```
-
-### 2. Create a virtual environment (optional)
-
-Windows:
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Download the dataset
-
-Download the dataset from:
-
-https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
-
-Extract the data file and place it inside the data/ folder. Ensure the notebook's file path matches your folder structure.
-
-### 5. Run the notebook
-
-```bash
-jupyter notebook
-```
-
-Open `energy_demand.ipynb` and execute the cells in order.
-
-## Feature Engineering
-
-The project creates features such as:
-
-- Hour of day
-- Day of week
-- Month
-- Weekend indicator
-- Previous-hour demand
-- Previous-day demand
-- Previous-week demand
-- Rolling 24-hour average
-- Rolling 168-hour average
-
-These features help the models learn daily, weekly, and nonlinear consumption patterns.
-
-## Model Evaluation
 
 The models are evaluated using:
 
@@ -190,8 +116,7 @@ AI/ML Student | Machine Learning | Data Science
 
 GitHub: https://github.com/YOUR_USERNAME
 
-LinkedIn: YOUR_LINKEDIN_URL
-
+LinkedIn: 
 ## License
 
 This project is intended for educational and portfolio purposes. Check the dataset's original terms and attribution requirements before redistributing the data.
